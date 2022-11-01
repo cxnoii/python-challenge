@@ -1,6 +1,5 @@
 import csv
 import os
-import math
 
 from numpy import average
 
@@ -35,4 +34,3 @@ print(f'Average Change: {average(changes_list)}')
 print(f'Greatest Increase in Profits: {max(changes_list)}')
 print(f'Greatest Decrease in Profits: {min(changes_list)}')
 
-# print(type(greatest_inc))
