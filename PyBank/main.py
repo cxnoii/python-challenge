@@ -1,5 +1,6 @@
 import csv
 import os
+import sys
 
 from numpy import average
 
@@ -28,9 +29,20 @@ with open(csvpath, newline='') as csvfile:
 
 average_change = round((profit_loss_total/month_total), 2)
 
+#print to terminal
+print('Financial Analysis: ')
 print(f'Total Months: {month_total}')
 print(f'Total: $ {profit_loss_total}')
 print(f'Average Change: {average(changes_list)}')
 print(f'Greatest Increase in Profits: {max(changes_list)}')
 print(f'Greatest Decrease in Profits: {min(changes_list)}')
 
+#create and print to txt file
+sys.stdout = open('Financial Analysis.txt', 'w')
+print('Financial Analysis: ')
+print(f'Total Months: {month_total}')
+print(f'Total: $ {profit_loss_total}')
+print(f'Average Change: {average(changes_list)}')
+print(f'Greatest Increase in Profits: {max(changes_list)}')
+print(f'Greatest Decrease in Profits: {min(changes_list)}')
+sys.stdout.close()
