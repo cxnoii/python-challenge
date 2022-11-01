@@ -26,18 +26,28 @@ for i in votes_per_candidate:
 
 #printing to terminal
 print("Election Results:")
+print('----------------------------')
 print(f'Total Votes: {total_votes}')
+print('----------------------------')
 print('Diana DeGette: ' + str(vote_percent_list[0]) + "% (" + str(votes_per_candidate['Diana DeGette']) + ")")
 print('Charles Casper Stockham: ' + str(vote_percent_list[1]) + "% (" + str(votes_per_candidate['Charles Casper Stockham']) + ")")
 print('Raymon Anthony Doane: ' + str(vote_percent_list[2]) + "% (" + str(votes_per_candidate['Raymon Anthony Doane']) + ")")
+print('----------------------------')
 print('Winner: Diana DeGette')
+print('----------------------------')
 
 #creating and printing to election_data_results
 sys.stdout = open('election_data_results.txt', 'w')
 print("Election Results:")
+print('----------------------------')
 print(f'Total Votes: {total_votes}')
+print('----------------------------')
 print('Diana DeGette: ' + str(vote_percent_list[0]) + "% (" + str(votes_per_candidate['Diana DeGette']) + ")")
 print('Charles Casper Stockham: ' + str(vote_percent_list[1]) + "% (" + str(votes_per_candidate['Charles Casper Stockham']) + ")")
 print('Raymon Anthony Doane: ' + str(vote_percent_list[2]) + "% (" + str(votes_per_candidate['Raymon Anthony Doane']) + ")")
+print('----------------------------')
 print('Winner: Diana DeGette')
+print('----------------------------')
+
+
 sys.stdout.close()
